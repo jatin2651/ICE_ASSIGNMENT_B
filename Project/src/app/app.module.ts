@@ -3,16 +3,21 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { LeaguetableComponent } from './leaguetable/leaguetable.component';
 
+import { LeaguetableserviceService } from './services/leaguetableservice.service';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LeaguetableComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [LeaguetableserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
