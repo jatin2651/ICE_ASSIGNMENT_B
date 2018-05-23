@@ -1,0 +1,117 @@
+.container{
+	margin:0 auto;
+	background-color: none;
+}
+#logo{
+	background: url("images/logo.png") no-repeat;
+    height: 31px;
+    text-indent:-9999px;
+    overflow: hidden;
+    float: left;
+    margin: 15px 0 0 0;
+}
+header{
+	margin: 0px 0;
+    background: #14bee9;
+    padding: 10px;
+    float: left;
+    width: 100%;
+}
+#menu{
+	float:left;
+
+}
+ul.nav{
+	padding-left: 0;
+	float: left;
+}
+#menu li{
+	display: inline-block;
+    line-height: 11px;
+    list-style-type: none;
+    margin: 13px 16px;
+}
+.nav li > a {
+    display: block;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color:#f8fafa;
+    padding: 10px 5px;
+    text-decoration: none;
+    position: relative;
+    
+}
+.nav li > a:before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+.nav > li > a:hover{
+	background-color: transparent;
+}
+.nav > li > a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.search a {
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: -1px;
+}
+.search form {
+    position: relative;
+    width: 100%;
+}
+.search {
+    float: right;
+    margin: 16px 10px 10px 10px;
+}
+
+#searchbox {
+    border:none;
+    opacity: 0.5;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+footer{
+    background: #14bee9;
+    padding: 20px 0;
+    color: #f8fafa;
+}
+.footer-nav{
+    text-align: center;
+    padding: 0;
+}
+.footer-nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 13px 16px;
+}
+
+.footer-nav li > a {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color:#f8fafa;
+    padding: 10px 5px;
+    text-decoration: none;
+    
+}

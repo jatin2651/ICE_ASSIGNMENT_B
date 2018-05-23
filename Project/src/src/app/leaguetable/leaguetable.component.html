@@ -1,0 +1,35 @@
+
+<div class="container "style="width: 900px; height: 500px; overflow: scroll; ">
+	<h3>League Name: {{data.leagueCaption}}</h3>
+	<h3>{{data.matchday}}</h3>
+	<table class="table">
+		
+		<thead>
+			<tr>
+			<th>Team rank</th>
+			<th> Team Name</th>
+			<th> Wins</th>
+			<th> logo</th>
+			<tr>
+		</thead>
+		<tr class="leagues" *ngFor="let league of data.standing">
+			<td>{{league.position}}</td>
+			<td > {{league.teamName}}</td>
+			<td>{{league.wins}}</td>
+			<td><img src ="{{league.crestURI}}" width="100px" height="100px" /></td>
+		</tr>
+
+	</table>
+	<!--<h3>{{data.leagueCaption}}</h3>
+	<h3>{{data.matchday}}</h3>
+	<ul>
+	<li class="leagues" *ngFor="let league of data.standing">
+
+		<span>{{league.teamName}}</span> <span>{{league.crestURI}}</span>
+		
+			<span>{{league.away.draws}}</span>
+		</li>
+
+	</ul>-->
+	
+</div>
